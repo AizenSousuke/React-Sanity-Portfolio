@@ -131,19 +131,19 @@
 			flex-direction: column;
 
 			li {
-                margin: 1rem;
+				margin: 1rem;
 
-                a {
-                    color: var(--gray-color);
-                    text-decoration: none;
-                    font-size: 1rem;
-                    text-transform: uppercase;
-                    font-weight: 500;
-                    
-                    &:hover {
-                        color: var(--secondary-color);
-                    }
-                }
+				a {
+					color: var(--gray-color);
+					text-decoration: none;
+					font-size: 1rem;
+					text-transform: uppercase;
+					font-weight: 500;
+
+					&:hover {
+						color: var(--secondary-color);
+					}
+				}
 			}
 		}
 	}
