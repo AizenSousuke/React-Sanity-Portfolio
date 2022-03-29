@@ -11,7 +11,20 @@ const Work = () => {
 	const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 	const [works, setWorks] = useState([]);
 	const [filterWork, setFilterWork] = useState([]);
-	const handleWorkFilter = (item) => {};
+	const handleWorkFilter = (item) => {
+		setActiveFilter(item);
+		setAnimateCard([{ y: 100, opacity: 0 }]);
+
+		setTimeout(() => {
+			setAnimateCard([{ y: 0, opacity: 1 }]);
+
+			if (item === "All") {
+				setFilterWork(works);
+			} else {
+				setFilterWork(works.filter((work) => work.tags.includes(item)));
+			}
+		}, 500);
+	};
 
 	useEffect(() => {
 		const query = `*[_type == "works"]`;
@@ -29,7 +42,7 @@ const Work = () => {
 				Section <span></span>
 			</h2>
 			<div className="app__work-filter">
-				{["UI/UX", "Mobile", "Web App", "React JS", "All"].map(
+				{["Webforms", "HTML/JS", "Web App", "React JS", "All"].map(
 					(item, index) => (
 						<div
 							key={index}
