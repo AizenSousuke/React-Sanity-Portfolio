@@ -6,6 +6,9 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import Testimonials from "./testimonials";
 import Abouts from "./abouts";
 import Works from "./works";
+import Skills from "./skills";
+import Experiences from "./experiences";
+import WorkExperiences from "./workExperiences";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -18,5 +21,8 @@ export default createSchema({
 		Testimonials,
 		Abouts,
 		Works,
+		Skills,
+		Experiences,
+		WorkExperiences,
 	]),
 });
