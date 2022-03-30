@@ -3,7 +3,7 @@ export default {
 	title: "Work Experiences",
 	type: "document",
 	fields: [
-		{ name: "name", title: "name", type: "string" },
+		{ name: "name", title: "Name", type: "string" },
 		{
 			name: "company",
 			title: "Company",
