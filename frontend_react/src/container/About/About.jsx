@@ -18,9 +18,10 @@ const About = () => {
 	return (
 		<>
 			<h2 className="head-text">
-				I Know That <span>Good Design</span>
+				Design adds <span>value </span>
+				faster
 				<br />
-				means <span>Good Business</span>
+				than it adds <span>costs</span>
 			</h2>
 			<div className="app__profiles">
 				{abouts.map((about, index) => (
@@ -32,7 +33,7 @@ const About = () => {
 						key={about.title + index}
 					>
 						<img
-							src={about.imgUrl ?? images.placeholder}
+							src={urlFor(about.imgUrl)}
 							alt={about.title}
 						/>
 						<h2 className="bold-text" style={{ marginTop: 20 }}>
