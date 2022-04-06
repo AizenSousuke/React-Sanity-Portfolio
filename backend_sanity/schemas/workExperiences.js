@@ -11,8 +11,14 @@ export default {
 		},
 		{
 			name: "desc",
-			title: "Desc",
+			title: "Description",
 			type: "string",
+		},
+		{
+			name: "responsibilities",
+			title: "Responsibilities",
+			type: "array",
+			of: [{ type: "block" }],
 		},
 	],
 };
