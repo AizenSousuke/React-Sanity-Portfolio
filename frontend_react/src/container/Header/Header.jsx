@@ -9,7 +9,7 @@ const scaleVariants = {
 		opacity: [0, 1],
 		transition: {
 			duration: 1,
-			ease: "easeInOut",
+			ease: "easeInOut"
 		},
 	},
 };
@@ -35,6 +35,24 @@ const Header = () => {
 							I'm a<span className="tag-span">Web Developer</span>
 						</p>
 					</div>
+					<motion.div
+						variant={scaleVariants}
+						whileInView={scaleVariants.whileInView}
+						className="app__header-circles-left"
+					>
+						{[
+							images.api,
+							images.git,
+							images.javascript
+						].map((circle, index) => (
+							<div
+								className="circle-cmp app__flex"
+								key={`circle-${index}`}
+							>
+								<img src={circle} alt="circle" />
+							</div>
+						))}
+					</motion.div>
 				</div>
 			</motion.div>
 			<motion.div
