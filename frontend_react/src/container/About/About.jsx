@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { images } from "../../constants";
 import { urlFor, client } from "../../client";
 import { AppWrap, MotionWrap } from "../../wrapper";
+import { PortableText } from "@portabletext/react";
 
 const About = () => {
 	const [abouts, setAbouts] = useState([]);
@@ -32,15 +33,12 @@ const About = () => {
 						className="app__profile-item"
 						key={about.title + index}
 					>
-						<img
-							src={urlFor(about.imgUrl)}
-							alt={about.title}
-						/>
+						<img src={urlFor(about.imgUrl)} alt={about.title} />
 						<h2 className="bold-text" style={{ marginTop: 20 }}>
 							{about.title}
 						</h2>
 						<p className="p-text" style={{ marginTop: 10 }}>
-							{about.description}
+							<PortableText value={about.description} />
 						</p>
 					</motion.div>
 				))}
