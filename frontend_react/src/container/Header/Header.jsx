@@ -35,7 +35,9 @@ const Header = () => {
 							I'm a<span className="tag-span">Web Developer</span>
 						</p>
 					</div>
-					<motion.div
+					
+				</div>
+				<motion.div
 						variant={scaleVariants}
 						whileInView={scaleVariants.whileInView}
 						className="app__header-circles-left"
@@ -53,7 +55,6 @@ const Header = () => {
 							</div>
 						))}
 					</motion.div>
-				</div>
 			</motion.div>
 			<motion.div
 				whileInView={{ opacity: [0, 1] }}
