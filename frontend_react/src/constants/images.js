@@ -27,6 +27,8 @@ import profile from "../assets/profile.png";
 import profilehomepage from "../assets/profile-homepage.png";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
+import apps from "../assets/apps.png";
+import developer from "../assets/developer.png";
 
 import adidas from "../assets/adidas.png";
 import amazon from "../assets/amazon.png";
@@ -74,4 +76,6 @@ export default {
 	spotify,
 	placeholder,
 	profilehomepage,
+	apps,
+	developer
 };
