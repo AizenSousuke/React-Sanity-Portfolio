@@ -13,7 +13,7 @@
 }
 
 .app__profile-item {
-    width: 400px;
+    width: 300px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -21,7 +21,7 @@
     margin: 2rem;
 
     @media screen and (min-width: 1200px) {
-        width: 800px;
+        width: 600px;
     }
 
     img {

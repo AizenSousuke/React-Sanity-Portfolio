@@ -1,8 +1,8 @@
-body{
-	min-width:468px;        /* Suppose you want minimum width of 1000px */
-	width: auto !important;  /* Firefox will set width as auto */
-	width:468px;            /* As IE6 ignores !important it will set width as 1000px; */
- }
+// body {
+// 	min-width: 468px; /* Suppose you want minimum width of 1000px */
+// 	width: auto !important; /* Firefox will set width as auto */
+// 	width: 468px; /* As IE6 ignores !important it will set width as 1000px; */
+// }
 
 .app {
 	background-color: var(--primary-color);
