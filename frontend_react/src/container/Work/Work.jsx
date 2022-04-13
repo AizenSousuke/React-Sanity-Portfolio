@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
+import { PortableText } from "@portabletext/react";
 
 const Work = () => {
 	const [activeFilter, setActiveFilter] = useState("All");
@@ -125,9 +126,9 @@ const Work = () => {
 								</motion.div>
 							</div>
 							<div className="app__work-content app__flex">
-								<h4 className="bold-text">{work.title}</h4>
+								<h4 className="bold-text">{work.name}</h4>
 								<p className="p-text" style={{ marginTop: 10 }}>
-									{work.description}
+									{/* <PortableText value={work.description} /> */}
 								</p>
 								<div className="app__work-tag app__flex">
 									<p className="p-text">{work.tags[0]}</p>
@@ -138,7 +139,10 @@ const Work = () => {
 				) : (
 					<div className="app__work-item app__flex">
 						<div className="app__work-img app__flex">
-							<p>Sorry no data is available. <br />Please try another filter.</p>
+							<p>
+								Sorry no data is available. <br />
+								Please try another filter.
+							</p>
 						</div>
 					</div>
 				)}
