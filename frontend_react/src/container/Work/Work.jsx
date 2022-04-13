@@ -37,7 +37,7 @@ const Work = () => {
 	return (
 		<>
 			<h2 className="head-text">
-				I have <br />
+				Applications I have <br />
 				<span>Worked </span>
 				On <span></span>
 			</h2>

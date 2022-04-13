@@ -45,7 +45,7 @@ const Footer = () => {
 				<div className="app__footer-card">
 					<img src={images.email} alt="email" />
 					<a href="mailto:puteranikdimas@gmail.com" className="p-text">
-						puteranikdimas@gmail.com
+						Email me @ puteranikdimas@gmail.com
 					</a>
 				</div>
 				{/* <div className="app__footer-card">
@@ -55,7 +55,7 @@ const Footer = () => {
 					</a>
 				</div> */}
 			</div>
-
+			<div className="p-text">Message me below</div>
 			{!isFormSubmitted ? (
 				<div className="app__footer-form app__flex">
 					<div className="app__flex">

@@ -71,7 +71,7 @@ const Skills = () => {
 												{work.name}
 											</h4>
 											<p className="p-text">
-												{work.company}
+												@{work.company}
 											</p>
 										</motion.div>
 										<ReactTooltip

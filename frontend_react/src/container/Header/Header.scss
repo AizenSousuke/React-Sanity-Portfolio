@@ -163,6 +163,10 @@
 			margin: 1rem;
 		}
 	}
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 }
 
 .app__header-circles {
@@ -219,6 +223,10 @@
 		div {
 			margin: 1rem;
 		}
+	}
+
+	@media screen and (max-width: 768px) {
+		display: none;
 	}
 }
 
