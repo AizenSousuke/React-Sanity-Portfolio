@@ -9,7 +9,7 @@ const scaleVariants = {
 		opacity: [0, 1],
 		transition: {
 			duration: 1,
-			ease: "easeInOut"
+			ease: "easeInOut",
 		},
 	},
 };
@@ -35,26 +35,23 @@ const Header = () => {
 							I'm a<span className="tag-span">Web Developer</span>
 						</p>
 					</div>
-					
 				</div>
 				<motion.div
-						variant={scaleVariants}
-						whileInView={scaleVariants.whileInView}
-						className="app__header-circles-left"
-					>
-						{[
-							images.api,
-							images.git,
-							images.javascript
-						].map((circle, index) => (
+					variant={scaleVariants}
+					whileInView={scaleVariants.whileInView}
+					className="app__header-circles-left"
+				>
+					{[images.api, images.git, images.javascript].map(
+						(circle, index) => (
 							<div
 								className="circle-cmp app__flex"
 								key={`circle-${index}`}
 							>
 								<img src={circle} alt="circle" />
 							</div>
-						))}
-					</motion.div>
+						)
+					)}
+				</motion.div>
 			</motion.div>
 			<motion.div
 				whileInView={{ opacity: [0, 1] }}
@@ -69,6 +66,17 @@ const Header = () => {
 					alt="profile_circle"
 					className="overlay_circle"
 				/>
+				<div className="card">
+					<a
+						href="https://www.dropbox.com/scl/fi/c8c284a6yjpnsi9iursyj/Putera-Nik-Dimas-Resume-220322-Full.docx?dl=0&rlkey=eb5jch3vc8nbeob8qgd0lh14x"
+						target="_blank"
+						rel="noreferrer"
+						alt="resume"
+						title="Download my resume"
+					>
+						Download my resume
+					</a>
+				</div>
 			</motion.div>
 			<motion.div
 				variant={scaleVariants}
