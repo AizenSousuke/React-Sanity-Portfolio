@@ -114,10 +114,19 @@
 		padding: 0.5rem;
 
 		&:after {
-			content: 'Click me for more information';
+			content: "Hover over me for more information";
 			font-size: x-small;
 			color: rgb(150, 150, 150);
 			margin-top: 1rem;
+		}
+
+		@media screen and (max-width: 768px) {
+			&:after {
+				content: "Click me for more information";
+				font-size: x-small;
+				color: rgb(150, 150, 150);
+				margin-top: 1rem;
+			}
 		}
 
 		h4 {
