@@ -1,7 +1,15 @@
 # React + Sanity Portfolio Website
 
 
+## Prerequisites
+- NodeJS
+
 ## Getting Started
+Install sanity CLI globally
+```
+yarn global add @sanity/cli
+```
+
 Create the following .env files with the specified properties from sanity dashboard in the root directory of frontend_react:
 ```
 REACT_APP_PROJECTID=
@@ -40,3 +48,6 @@ Remember to set
 CI='' yarn build
 ```
 in the build commands so as not to get a build error.
+
+## Contact
+For any issues and feedbacks, please contact me via my github email. You may also create a pull request.
