@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.scss";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 import { AppWrap } from "../../wrapper";
+import { client } from "../../client";
 const scaleVariants = {
 	whileInView: {
 		scale: [0, 1],
@@ -15,6 +16,14 @@ const scaleVariants = {
 };
 
 const Header = () => {
+	const [files, setFiles] = useState([]);
+	useEffect(() => {
+		const query = `*[_type == "files"]`;
+		client.fetch(query).then((data) => {
+			setFiles(data);
+		});
+	}, []);
+
 	return (
 		<div className="app__header app__flex">
 			<motion.div
@@ -66,17 +75,19 @@ const Header = () => {
 					alt="profile_circle"
 					className="overlay_circle"
 				/>
-				<div className="card">
-					<a
-						href="https://www.dropbox.com/scl/fi/lqb97dcawuf22v14cfzti/Putera-Nik-Dimas-Resume-020525-Full-Tech.docx?rlkey=5qjqxd7p6i5gmstgh8x1ypz3h&dl=0"
-						target="_blank"
-						rel="noreferrer"
-						alt="resume"
-						title="Download my resume"
-					>
-						Download my resume
-					</a>
-				</div>
+				{files?.length > 0 && (
+					<div className="card p-0">
+						<a
+							href={files[0].FileURL}
+							target="_blank"
+							rel="noreferrer"
+							alt="resume"
+							title="Download my resume"
+						>
+							Download my resume
+						</a>
+					</div>
+				)}
 			</motion.div>
 			<motion.div
 				variant={scaleVariants}
