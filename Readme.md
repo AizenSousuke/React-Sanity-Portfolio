@@ -26,7 +26,7 @@ yarn start
 The React frontend app will open in a browser on [http://localhost:3000](http://localhost:3000) and Sanity backend will be available at [http://localhost:3333](http://localhost:3333).
 
 
-## Deployment
+## Deployment to Netlify
 You can deploy to netlify by going into the frontend folder and doing a 
 ```
 yarn build

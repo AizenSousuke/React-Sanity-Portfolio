@@ -7,14 +7,15 @@
   "author": "AizenSousuke <puteranikdimas@yahoo.com.sg>",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "sanity start",
-    "build": "sanity build"
+    "start": "npx sanity start",
+    "build": "npx sanity build"
   },
   "keywords": [
     "sanity"
   ],
   "dependencies": {
     "@sanity/base": "^2.29.2",
+    "@sanity/image-url": "^0.140.23-canary",
     "@sanity/core": "^2.28.1",
     "@sanity/default-layout": "^2.29.2",
     "@sanity/default-login": "^2.29.2",
@@ -27,5 +28,7 @@
     "react-dom": "^17.0",
     "styled-components": "^5.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@sanity/cli": "^3.88.3"
+  }
 }
