@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "concurrently \"cd frontend_react && yarn start\" \"cd backend_sanity && yarn start\""
+    "start": "concurrently \"cd frontend_react && yarn start\" \"cd backend_sanity && yarn start\"",
+    "install": "concurrently \"cd frontend_react && yarn install\" \"cd backend_sanity && yarn install\""
   },
   "dependencies": {
     "concurrently": "^7.1.0"

@@ -68,7 +68,7 @@ const Header = () => {
 				/>
 				<div className="card">
 					<a
-						href="https://www.dropbox.com/scl/fi/c8c284a6yjpnsi9iursyj/Putera-Nik-Dimas-Resume-220322-Full.docx?dl=0&rlkey=eb5jch3vc8nbeob8qgd0lh14x"
+						href="https://www.dropbox.com/scl/fi/lqb97dcawuf22v14cfzti/Putera-Nik-Dimas-Resume-020525-Full-Tech.docx?rlkey=5qjqxd7p6i5gmstgh8x1ypz3h&dl=0"
 						target="_blank"
 						rel="noreferrer"
 						alt="resume"
