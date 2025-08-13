@@ -2,6 +2,10 @@
 
 [Live link to my portfolio](https://putera-nik.netlify.app/)
 
+### Dependencies
+- yarn
+- node 18.15+
+
 ## Getting Started
 Create the following .env files with the specified properties from sanity dashboard in the root directory of frontend_react:
 ```
@@ -12,20 +16,25 @@ REACT_APP_USECDN=true
 REACT_APP_TOKEN=
 ```
 
+Fill up the details accordingly. 
+
 Go to the root directory of this project with a command prompt and run
 ```
 yarn install
 ```
+to install all the project dependencies.
 
-Repeat the process for both frontend_react and backend_sanity directory to install the dependencies.
 
-Go to the root of this project again and run
+### Running the project
+From the root folder, run:
 ```
 yarn start
 ```
 
-The React frontend app will open in a browser on [http://localhost:3000](http://localhost:3000) and Sanity backend will be available at [http://localhost:3333](http://localhost:3333).
+The React frontend app will open in a browser on [http://localhost:3000](http://localhost:3000)
+Sanity backend will be available at [http://localhost:3333](http://localhost:3333).
 
+To edit items in sanity, go to [http://localhost:3333/sanity](http://localhost:3333/sanity) that is connected via .env file.
 
 ## Deployment to Netlify
 You can deploy to netlify by going into the frontend folder and doing a 
@@ -34,7 +43,7 @@ yarn build
 ```
 and dragging and dropping the build folder generated over to netlify. 
 
-You can also alternatively link the github repository on netlify and publishing from there. 
+You can also alternatively link the github repository on netlify and publish from there. 
 
 Remember to set 
 ```
