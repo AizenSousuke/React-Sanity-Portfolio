@@ -1,5 +1,6 @@
 # React + Sanity Portfolio Website
 
+[Live link to my portfolio](https://putera-nik.netlify.app/)
 
 ## Getting Started
 Create the following .env files with the specified properties from sanity dashboard in the root directory of frontend_react:

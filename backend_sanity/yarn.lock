@@ -3030,7 +3030,7 @@
   resolved "https://registry.npmjs.org/@sanity/icons/-/icons-1.2.5.tgz#2b90d8b1e59c8ff5b467f9f127ca9b35f52ce1ef"
   integrity sha512-Q7eu/6ql9QVqdXcYGotvWIEbsleqpwtW2Pal7Ty/3nd+Lv326RzEpGbxuNeUW2sRQlxpKFJ9LD64GOgFEDaNOg==
 
-"@sanity/image-url@^0.140.23":
+"@sanity/image-url@^0.140.23-canary":
   version "0.140.23-canary.0"
   resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-0.140.23-canary.0.tgz#5ea8191a413eb578dcae3fe2a1c80bb1b142d18f"
   integrity sha512-tV1WJe7ZGv9JTFuP6R0/tu16buEmfnOOOYzKsGvZlOPuAVppKLV43D0NOx6ai1BgB6q3VvE1r0hRhkkH3bwpBw==
