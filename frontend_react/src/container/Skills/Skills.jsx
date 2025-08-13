@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Skills.scss";
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import ReactTooltip from "react-tooltip";
 
@@ -100,6 +99,13 @@ const Skills = () => {
 												className="skills-tooltip"
 											>
 												{work.desc}
+												{/* <div className="tooltip-text">
+													<PortableText
+														value={
+															work.responsibilities
+														}
+													/>
+												</div> */}
 											</ReactTooltip>
 										</div>
 									))}
