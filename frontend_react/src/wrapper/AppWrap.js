@@ -1,10 +1,8 @@
-import React from "react";
-import { NavigationDots, SocialMedia } from "../components";
+import { NavigationDots } from "../components";
 
 const AppWrap = (Component, idName, classNames) => () => {
 	return (
-		<div id={idName} className={`app__container ${classNames}`}>
-			{/* <SocialMedia /> */}
+		<div id={idName} className={`app__container ${classNames ? classNames : ""}`}>
 			<div className="app__wrapper app__flex">
 				<Component />
 
